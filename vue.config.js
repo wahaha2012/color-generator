@@ -6,6 +6,7 @@ module.exports = {
     }
   },
   devServer: {
+    disableHostCheck: true,
     proxy: {
       "^/api/debug": {
         target: "http://10.0.17.102:8080/",
